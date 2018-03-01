@@ -1399,6 +1399,7 @@ function make_mobile_menu_slide_left(){
     jQuery(document).ready(function(){
 
     if (!$("body").hasClass("rtl")) {
+      // teeeeeeeeeeeeeeest
       $( '#responsive-menu-container' ).removeClass('slide-right');
       $( '#responsive-menu-container' ).addClass('slide-left');
 

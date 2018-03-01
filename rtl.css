@@ -1,0 +1,402 @@
+/*
+Theme Name: i-spirit
+Description: Adds support for languages written in a Right To Left (RTL) direction.
+It's easy, just a matter of overwriting all the horizontal positioning attributes
+of your CSS stylesheet in a separate stylesheet file named rtl.css.
+
+See http://codex.wordpress.org/Right_to_Left_Language_Support
+*/
+/* swap checkout columns */
+.woocommerce .col2-set .col-2 {
+    float: left!important;
+
+}
+.woocommerce .col2-set .col-1{
+    float: right!important;
+}
+
+
+.comment-form [for="comment"]{
+	float:right;
+}
+.single-product .share-links ul{
+	float:left;
+}
+.single-product .share-links .share-text{
+	float: right !important;
+}
+td,th {
+	text-align: right !important;
+}
+
+
+.woocommerce .cart-collaterals .cart_totals,
+.woocommerce-page .cart-collaterals .cart_totals {
+    float: right;
+     text-align: right;
+}
+
+.owl-carousel {
+	direction: ltr;
+}
+
+.nx-column .widget {
+	direction: ltr;
+}
+
+.site-footer .widget {
+	direction: rtl;
+	text-align: right;
+}
+
+ul.products li.product,
+h1, h2, h3, h4, h5, h6, .nx-heading, .nx-service-title {
+	direction: rtl;
+}
+
+.site-footer .widget .ibutton {
+	margin-right: 0px;
+}
+
+button, input, select, textarea {
+	direction: rtl;
+}
+
+input, select, textarea {
+	text-align: right;
+}
+
+/* Desktops */
+/*
+@media (min-width:961px) {
+	.site-header .home-link {
+		padding-right: 0px;
+		padding-left: 20px;
+		float: right;
+		margin-right: -60%;
+	}
+	.navbar {
+		float: left;
+		direction: rtl;
+	}
+}
+*/
+
+menu, ol, ul {
+	padding-right: 40px;
+	padding-left: 0px;
+}
+
+.header-inwrap .woocart .cartdrop a.wc-forward.checkout {
+	margin-left: 16px;
+	margin-right: 16px;
+}
+
+.navbar .header-icons {
+	display: block;
+	float: left;
+}
+
+.navbar .main-navigation {
+	display: block;
+	float: right;
+}
+
+.single-product .product {
+	direction: ltr;
+}
+
+.single-product .product .entry-summary,
+.single-product .product .woocommerce-tabs.wc-tabs-wrapper {
+	direction: rtl;
+}
+
+/* Fix arrows of main menu */
+.nav-container > ul ul li.menu-item-has-children:after {
+	left: 5%;
+	content: "\f053";
+}
+
+/* Fix top menu - sunmenu container position */
+
+.default-header .site-header:not(.fixeddiv) .nav-container > ul > li > .sub-menu {
+    left: auto;
+    right: 0px;
+}
+
+.default-header .site-header:not(.fixeddiv) .nav-container > ul > li.nximoveleft > .sub-menu > li > .sub-menu {
+    left: auto;
+    right: 240px;
+}
+
+
+/*
+@media screen and (max-width: 1000px){
+	#responsive-menu-container li.responsive-menu-item{
+		text-align: right;
+	}
+	.responsive-menu-open #responsive-menu-container.slide-left{
+		-webkit-transform:translateX(0%)!important;
+	}
+	#responsive-menu-container {
+			right :0 !important;
+	}
+	#responsive-menu-container.slide-left{
+		-webkit-transform: translateX(100%) !important;
+	}
+	button#responsive-menu-button{
+			left: 5%!important;
+	}
+	#responsive-menu-container #responsive-menu li.responsive-menu-item a .responsive-menu-subarrow{
+		left:0!important;
+	}
+} */
+
+
+.nx-heading.nx-heading-align-left{
+	text-align: right !important;
+}
+
+/* Fix submenu container for some categories (Kids/Mom) */
+.nav-container > ul > li > ul.sub-menu > li ul.sub-menu {
+    left: auto;
+    right: 240px;
+}
+
+/* Adjust submenu items of the main menu to right alignment */
+#mega-menu-wrap-primary, #mega-menu-wrap-primary #mega-menu-primary, #mega-menu-wrap-primary #mega-menu-primary ul.mega-sub-menu, #mega-menu-wrap-primary #mega-menu-primary li.mega-menu-item, #mega-menu-wrap-primary #mega-menu-primary a.mega-menu-link {
+	text-align: right;
+}
+
+/* adjust breadcrumb position for Arabic */
+#breadcrumbs {
+    float: right;
+}
+
+del {
+    float: right;
+    padding-left: 5px;
+}
+
+span.price del {
+    float: none !important;
+}
+
+/* Translate 'on sale' image into Arabic */
+.woocommerce .woo-content .type-product.sale span.onsale, .woocommerce-page .woo-content .type-product.sale span.onsale, .woocommerce .product span.nx-onsale, .woocommerce-page .product span.nx-onsale {
+	background-image: url(img/sale-ar.png);
+  left: -10px;
+
+}
+
+/* Translate 'out of stock' image into Arabic */
+.woocommerce .outofstock:before {
+	background-image: url(img/out-stock-ar.png);
+	left: 40px;
+}
+
+
+.woocommerce-page input.button , .woocommerce input.button, .woocommerce-page #content input.button{
+    float: left;
+	}
+
+
+	/*  change logo to arabic logo */
+.site-header:not(.fixeddiv) .home-link img , .site-header.fixeddiv .home-link img{
+	content: url("img/Urkeedcom_Logo.png");
+}
+
+
+/* style of my account page tabs */
+nav.woocommerce-MyAccount-navigation ul {
+  list-style-type: none;
+  padding-left: 0;
+  font-size: 17px;
+  line-height: 26px;
+}
+.woocommerce-account .woocommerce-MyAccount-content {
+    width: 75%;
+		padding-top: 15px;
+}
+
+.woocommerce-account .woocommerce-MyAccount-navigation {
+    width: 20%;
+}
+nav.woocommerce-MyAccount-navigation ul li {
+  padding: 8px 20px;
+  background-color: rgba(0,0,0,0.05);
+  border-bottom: 1px solid rgba(0,0,0,0.05);
+}
+nav.woocommerce-MyAccount-navigation ul li.is-active {
+  background-color: rgba(0,0,0,0.1);
+}
+nav.woocommerce-MyAccount-navigation ul li.is-active a {
+  color: rgba(0,0,0,0.8); cursor: default;
+}
+nav.woocommerce-MyAccount-navigation ul li.is-active:after {
+  content: "";
+  height: 0;
+  width: 0;
+  border-top: 20px solid transparent;
+  border-right: 14px solid rgba(0,0,0,0.1)!important;
+  border-left: unset!important;
+  border-bottom: 20px solid transparent;
+	float: left!important;
+	margin-left: -34px;
+	margin-right: unset!important;
+  margin-top: -7px;
+}
+nav.woocommerce-MyAccount-navigation ul li:not(.is-active):hover {
+  background-color: rgba(0,0,0,0.07);
+}
+nav.woocommerce-MyAccount-navigation ul li:not(.is-active):hover:after {
+  content: "";
+  height: 0;
+  width: 0;
+  border-top: 20px solid transparent;
+  border-right: 14px solid rgba(0,0,0,0.07)!important;
+	border-left: unset !important;
+  border-bottom: 20px solid transparent;
+  float: left!important;
+  margin-left: -34px!important;
+  margin-right: unset!important;
+  margin-top: -7px;
+}
+
+div.owl-item.active .tinv-wraper.tinv-wishlist, .woo-border-box .tinv-wraper.woocommerce.tinv-wishlist{
+    /* float: left;
+    margin-left: 10px !important; */
+}
+
+
+/* Start of Sort by style editing */
+.chosen-rtl .chosen-drop, .chosen-rtl.chosen-container-single-nosearch .chosen-search {
+ left: 0px !important;
+}
+
+.chosen-container-single.chosen-container-single-nosearch .chosen-search {
+  	left: 9999px !important;
+}
+
+.chosen-search input[type="text"] {
+    display: none;
+}
+
+/* Edit logo position in RTL */
+@media (min-width : 999px) {
+	.site-header:not(.fixeddiv) .home-link {
+        float: right;
+    }
+
+    .site-header:not(.fixeddiv) .navbar {
+        float: right;
+    }
+}
+
+@media (min-width : 765px) {
+    .site-header .home-link {
+        float: right;
+    }
+
+}
+
+#wcfm-main-contentainer .page_collapsible .fa{
+  float: initial!important;
+}
+
+.half_div , .wcmp_regi_main .wcmp_regi_form_box .wcmp-regi-12 , .triple_ele{
+  float: right !important;
+}
+
+#preloader_variable_img {
+	right: auto;
+	left: 10%;
+}
+
+/* Fix cart container for RTL */
+.site-header .woocart .cartdrop {
+	left: 0px;
+	right: auto;
+}
+
+/* feedback when user enter phone number in checkout */
+#valid-msg1{
+  padding-right: 10px;
+}
+#error-msg1{
+  padding-right: 10px;
+}
+
+/* fix flag of phone number */
+.intl-tel-input .selected-flag .iti-flag{
+  margin-right: 20px!important;
+  margin-top: 6px!important;
+}
+
+input[type="tel"],input[type="email"]{
+  text-align: left!important;
+  direction: ltr!important;
+
+}
+
+/* Modify phone key style for RTL */
+.intl-tel-input .country-list {
+	text-align: right;
+}
+
+span.dial-code {
+	float: left;
+}
+
+/* Fix error box position in vendor product page */
+.wcfm_form_simple_submit_wrapper .wcfm-info, .wcfm_form_simple_submit_wrapper .wcfm-success, .wcfm_form_simple_submit_wrapper .wcfm-warning, .wcfm_form_simple_submit_wrapper .wcfm-error, .wcfm_form_simple_submit_wrapper .wcfm-validation {
+    width: unset;
+    right: 60%;
+}
+
+/* responsive menu RTL  */
+#responsive-menu-container{
+	right : 0 !important;
+	left : unset !important;
+}
+
+
+@media screen and (max-width: 1000px) {
+   #responsive-menu-button {
+      left: 1%!important;
+      right: unset!important;
+    }
+}
+
+/* Style email input in footer contact form */
+input.wpcf7-form-control.wpcf7-text.wpcf7-email.wpcf7-validates-as-required.wpcf7-validates-as-email {
+    text-align: right !important;
+}
+
+/* Display related products section to the right */
+div.owl-item.active {
+    float: right;
+}
+
+/* To fix main menu to be in RTL */
+div.header-holder {
+	all: inherit;
+}
+
+
+.navbar {
+    float: right!important;
+}
+.sales_schedule{
+  text-align: right!important;
+}
+
+
+.select2-selection--multiple:after{
+  right: unset!important;
+  left: 10px!important;
+}
+
+ul.yith-wcan.yith-wcan-group {
+	float: right;
+}
